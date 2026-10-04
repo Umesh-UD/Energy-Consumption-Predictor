@@ -1,0 +1,34 @@
+:root {
+  --primary: #3b82f6;
+  --primary-hover: #2563eb;
+  --secondary: #10b981;
+  --accent: #8b5cf6;
+  --background: #0f172a;
+  --surface: #1e293b;
+  --surface-hover: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --warning: #f59e0b;
+  --danger: #ef4444;
+  --radius: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background);
+  color: var(--text-main);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}

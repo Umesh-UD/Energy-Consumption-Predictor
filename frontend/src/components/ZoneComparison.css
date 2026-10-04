@@ -1,0 +1,148 @@
+.zone-comparison-container {
+  background-color: var(--card-bg, #ffffff);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
+}
+
+.comparison-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.comparison-header h2 {
+  margin: 0;
+  color: #1f2937;
+}
+
+.sort-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-controls label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.sort-controls select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  outline: none;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.comparison-table th {
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  background-color: #f9fafb;
+}
+
+.zone-name-cell {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.growth-positive {
+  color: #ef4444; /* High growth might mean more consumption, so red can be good/bad depending on context */
+  font-weight: 600;
+}
+
+.growth-negative {
+  color: #10b981;
+  font-weight: 600;
+}
+
+.view-zone-btn {
+  background-color: #f3f4f6;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.view-zone-btn:hover {
+  background-color: #e5e7eb;
+  color: #111827;
+}
+
+/* Added styles for Peak Load and AC Insight comparison tables */
+.info-text {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.risk-row {
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.risk-row:hover {
+  background-color: rgba(239, 68, 68, 0.1) !important;
+}
+
+.risk-badge {
+  display: inline-block;
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--warning);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.safe-badge {
+  display: inline-block;
+  background-color: rgba(16, 185, 129, 0.15);
+  color: var(--secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.progress-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.mini-progress-bar {
+  flex-grow: 1;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.mini-progress-fill {
+  height: 100%;
+  background-color: #3b82f6;
+}

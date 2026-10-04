@@ -1,0 +1,43 @@
+.chart-container {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+  transition: box-shadow 0.3s ease;
+}
+
+.chart-container:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.chart-container h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-main);
+  border-left: 3px solid var(--primary);
+  padding-left: 0.75rem;
+}
+
+.no-data {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-muted);
+  background: var(--surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+/* Customize Recharts Tooltip */
+.recharts-default-tooltip {
+  background-color: rgba(30, 41, 59, 0.95) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+  color: var(--text-main) !important;
+}
+
+.recharts-tooltip-item {
+  color: var(--text-main) !important;
+}

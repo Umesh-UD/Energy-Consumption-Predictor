@@ -1,0 +1,123 @@
+.peak-load-panel {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border);
+  margin-top: 1rem;
+}
+
+.peak-load-panel.risk {
+  border-top: 4px solid var(--warning);
+}
+
+.peak-load-panel.safe {
+  border-top: 4px solid var(--secondary);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.panel-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  flex-grow: 1;
+}
+
+.icon-main {
+  color: var(--primary);
+}
+
+.risk-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: rgba(239, 68, 68, 0.15);
+  color: var(--warning);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.peak-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.stat-label {
+  color: var(--text-muted);
+}
+
+.stat-val {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.peak-visual {
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.ratio-text {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.ratio-number {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.progress-bar-bg {
+  position: relative;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--accent);
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.peak-load-panel.risk .progress-bar-fill {
+  background-color: var(--warning);
+}
+
+.threshold-marker {
+  position: absolute;
+  top: -4px;
+  height: 16px;
+  width: 2px;
+  background-color: white;
+  z-index: 2;
+}
+
+.threshold-desc {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin: 0;
+}

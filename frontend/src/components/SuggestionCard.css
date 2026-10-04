@@ -1,0 +1,97 @@
+.suggestion-card {
+  background-color: var(--surface);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+
+.suggestion-card:hover {
+  transform: translateY(-4px);
+}
+
+.suggestion-card.warning-card {
+  border-top: 4px solid var(--warning);
+}
+
+.suggestion-card.success-card {
+  border-top: 4px solid var(--secondary);
+}
+
+.suggestion-card.stable-card {
+  border-top: 4px solid var(--primary);
+}
+
+.suggestion-content {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper {
+  padding: 0.75rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.icon.warning { color: var(--warning); }
+.icon.success { color: var(--secondary); }
+.icon.stable { color: var(--primary); }
+
+.suggestion-content h4 {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.suggestion-content p {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.metrics-box {
+  background: var(--background);
+  border-radius: 8px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+}
+
+.metrics-box h5 {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.metric-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.metric-value {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--accent);
+}

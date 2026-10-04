@@ -1,0 +1,39 @@
+.zone-selector {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--surface);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.zone-selector:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.zone-selector label {
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.zone-selector select {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: var(--background);
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+  min-width: 200px;
+  cursor: pointer;
+}
+
+.zone-selector select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
